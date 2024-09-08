@@ -8,7 +8,7 @@ namespace Kollektsioonid
 {
     public class OmaUlesanne
     {
-        public static List<int> JagaPariteediJargi()
+        public static List<int> Numbri()
         {
             Random random = new Random();
 
