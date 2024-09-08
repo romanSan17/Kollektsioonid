@@ -122,49 +122,4 @@ namespace Kollektsioonid
             Console.WriteLine($"Linn: {linn}");
         }
     }
-
-    class Program
-    {
-        static void Main()
-        {
-            var maakonnad = new Maakonnad();
-
-            while (true)
-            {
-                Console.Clear();
-                Console.WriteLine("1. Küsitlus");
-                Console.WriteLine("2. Lisa linn");
-                Console.WriteLine("3. Näita maakonda linna järgi");
-                Console.WriteLine("4. Näita linna maakonna järgi");
-
-                string choice = Console.ReadLine().Trim();
-
-                switch (choice)
-                {
-                    case "1":
-                        maakonnad.Küsitlus();
-                        break;
-                    case "2":
-                        Console.Write("Linn: ");
-                        var linn = Console.ReadLine().Trim();
-                        Console.Write("Maakond: ");
-                        var maakond = Console.ReadLine().Trim();
-                        maakonnad.LisaSissekanne(linn, maakond);
-                        break;
-                    case "3":
-                        maakonnad.NäitaMaakondLinnaJärgi();
-                        break;
-                    case "4":
-                        maakonnad.NäitaLinnMaakonnaJärgi();
-                        break;
-                    default:
-                        Console.WriteLine("Vale valik.");
-                        break;
-                }
-
-                Console.WriteLine("Jätkamiseks vajuta Enter...");
-                Console.ReadLine();
-            }
-        }
-    }
 }
