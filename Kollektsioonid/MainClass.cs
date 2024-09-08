@@ -11,8 +11,8 @@ namespace Kollektsioonid
         public static void Main(string[] args)
         {
             // 5
-            List<int> sortedNumbers = OmaUlesanne.JagaPariteediJargi();
-            Console.WriteLine("Четные и нечетные разделены: " + string.Join(", ", sortedNumbers));
+            List<int> sortedNumbers = OmaUlesanne.Numbri();
+            Console.WriteLine("Paaritu ja paaritu on eraldatud: " + string.Join(", ", sortedNumbers));
 
             // 4
             StartMaakonnadMenu();
