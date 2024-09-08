@@ -96,7 +96,6 @@ namespace Kollektsioonid
                 Console.WriteLine($"{inimene.Nimi} on {inimene.Vanus} aastat vana. Ta on {inimene.Sugu}. SBI={inimene.HB_vorrand()}");
             }
 
-            // 2. Работа с классом Auto
             Auto auto1 = new Auto("681MRP", Color.Bisque, inimene1);
             Auto auto2 = new Auto("180ABC", Color.NavajoWhite, inimene2);
             Auto auto3 = new Auto("079TDI", Color.Red, inimene3);
