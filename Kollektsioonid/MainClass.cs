@@ -20,7 +20,6 @@ namespace Kollektsioonid
             RunOtherTasks();
         }
 
-        // Метод для работы с Maakonnad
         public static void StartMaakonnadMenu()
         {
             var maakonnad = new Maakonnad();
